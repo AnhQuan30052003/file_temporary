@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "627934661193",
+    "project_id": "nguyenanhquan-firebase-6c851",
+    "storage_bucket": "nguyenanhquan-firebase-6c851.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627934661193:android:ace3d3641ea8bfa5c98d98",
+        "android_client_info": {
+          "package_name": "com.example.nguyenanhquan_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ6zd4CfYQORv6iH3IxV9vYx1wE_Qa6lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
