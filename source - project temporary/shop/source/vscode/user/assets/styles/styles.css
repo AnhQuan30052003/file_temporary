@@ -1,0 +1,26 @@
+:root {
+  --w-calc-1: 450px;
+  --w-calc-2: 40px;
+}
+
+body {
+  background-color: #eff0f5;
+}
+
+.list-account li {
+  transition: 1s;
+  margin: 5px 0;
+}
+
+.list-account li:hover {
+  text-decoration: underline;
+}
+
+.translate-hidden {
+  transform: translateY(-300px);
+}
+
+.khung-an {
+  transition: 0.5s;
+}
+

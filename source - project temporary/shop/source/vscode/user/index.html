@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AQ Shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css ">
+  <link rel="stylesheet" href="https://anhquan30052003.github.io/AnhQuanCSS/style-main.css">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <link rel="stylesheet" href="./assets/styles/a.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+  <script src="./assets/javascripts/a.js"></script>
+  <script src="./assets/javascripts/b.js"></script>
+</head>
+
+<body>
+  <!-- Header page -->
+  <header id="header" class="bg-white pt-5 pb-20 fixed w-full">
+    <div class="container flex gap-10 py-5 h-50 justify-content-between">
+      <div class="logo-name flex flex-y h-full w-100">
+        <a href="./index.html" class="inline-block fw-700 text-black">AQ Shop</a>
+      </div>
+  
+      <div class="khung-tim-kiem h-full flex justify-content-between w-calc-1">
+        <input type="text" name="" placeholder="Tìm kiếm trên AQ shop" autofocus
+          class="h-full p-5 bo-none w-calc-2"
+          style="background-color: #eff0f5;"
+          >
+        <div class="icon h-full flex-x-y flex cursor-pointer bg-orange w-44 btn-hover-opacity">
+          <i class="fa-solid fa-magnifying-glass text-white"></i>
+        </div>
+      </div>
+    
+      <div class="gio-hang h-full flex flex-x align-items-end relative w-44 btn-hover-opacity">
+        <a href="#"><i class="fa-solid fa-cart-shopping text-gray"></i></a>
+  
+        <div class="so-luong absolute top-3 right-3">
+          <p class="bg-orange text-white rounder-full p-3 fs-10">0</p>
+        </div>
+      </div>
+  
+      <div class="khung-lenh w-200 relative border rounder-5">
+        <div class="khung-hien h-full w-full flex flex-x-y cursor-pointer btn-hover-opacity">
+          <p class="hidden">
+            <a href="#">Đăng nhập</a> /
+            <a href="#">Đăng ký</a>
+          </p>
+  
+          <p class="tai-khoan fw-700">Tài khoản: Quân</p>
+        </div>
+        <div class="khung-an py-10 px-20 absolute -top-1 -left-40 w-240 rounder-5 bg-white border translate-hidden>
+          <ul class="list-account list-none">
+            <li><a href="#"><span class="inline-block w-30"><i class="fa-regular fa-user"></i></span><span>Quản lý tài khoản</span></a></li>
+            <li><a href="#"><span class="inline-block w-30"><i class="fa-solid fa-check"></i></span><span>Đơn hàng của tôi</span></a></li>
+            <li><a href="#"><span class="inline-block w-30"><i class="fa-regular fa-heart"></i></span><span>Danh sách yêu thích</span></a></li>
+            <li><a href="#"><span class="inline-block w-30"><i class="fa-solid fa-pen-to-square"></i></span><span>Nhận xét của tôi</span></a></li>
+            <li><a href="#"><span class="inline-block w-30"><i class="fa-regular fa-circle-xmark"></i></span><span>Đơn hàng đổi trả</span></a></li>
+            <li><a href="#"><span class="inline-block w-30"><i class="fa-solid fa-right-from-bracket"></i></span><span>Đăng xuất</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner page -->
+  <section class="banner-page">
+    <hr class="h-76">
+    <div class="container h-450">
+      <div class="slider h-full">
+        <div class="item w-full"><img class="w-full object-fit-cover" src="./assets/images/vu-tru.jpg" alt=""></div>
+        <div class="item w-full"><img class="w-full object-fit-cover" src="./assets/images/vu-tru.jpg" alt=""></div>
+        <div class="item w-full"><img class="w-full object-fit-cover" src="./assets/images/vu-tru.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
