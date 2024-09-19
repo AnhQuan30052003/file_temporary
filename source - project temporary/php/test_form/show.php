@@ -19,7 +19,7 @@
     ?>
 
     <br>
-    <a href="index.php">Click để Quay lại</a>
+    <a href="input.php">Click để Quay lại</a>
   </div>
 </body>
 </html>
