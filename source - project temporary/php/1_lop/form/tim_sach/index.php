@@ -7,11 +7,11 @@
   <title>Document</title>
 </head>
 
-<body class="w-100vw h-100vh flex flex-x-y">
+<body class="w-100vw h-100vh flex flex-x">
   <section>
     <h1 class="text-center my-10">Tìm sách</h1>
 
-    <form action="xu_ly_tim_sach.php" method="post">
+    <form action="solve.php" method="post">
       <label for="">Từ khoá: </label>
 
       <input

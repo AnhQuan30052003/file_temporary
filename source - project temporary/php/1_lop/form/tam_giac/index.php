@@ -26,67 +26,86 @@
 
   function checkTamGiac() {
     global $a, $b, $c;
-    return ($a + $b > $c) || ($a + $c > $b) || ($b + $c > $a);
+    return ($a + $b > $c) && ($a + $c > $b) && ($b + $c > $a);
   }
 
-  if (isset($_REQUEST["tinh"])) {
-    if (isset($_REQUEST["a"]) && isset($_REQUEST["b"]) && isset($_REQUEST["c"])) {
-      $a = (float) trim($_REQUEST["a"]);
-      $b = (float) trim($_REQUEST["b"]);
-      $c = (float) trim($_REQUEST["c"]);
-  
-      if (checkTamGiac()) {
-        $cv = $a + $b + $c;
-        $p = $cv/2;
-        $dt = sqrt($p*abs($p - $a)*abs($p - $b)*abs($p - $c));
+  function tinh() {
+    global $a, $b, $c, $cv, $dt;
+
+    if (isset($_REQUEST["tinh"], $_REQUEST["a"], $_REQUEST["b"], $_REQUEST["c"])) {
+      $a = $_REQUEST["a"];
+      $b = $_REQUEST["b"];
+      $c = $_REQUEST["c"];
+
+      if ((float) $a != $a || (float) $b != $b || (float) $c != $c) {
+        echo "<script>alert('Dữ liệu nhập phải là số nguyên hoặc số thực !');</script>";
+        return;
       }
+
+      if (checkTamGiac() == false) {
+        echo "<script>";
+        echo "alert('Các cạnh này không thể tạo thành tam giác !');";
+        echo "</script>";
+        return;
+      }
+
+      $cv = $a + $b + $c;
+      $p = $cv / 2;
+      $dt = sqrt($p*abs($p - $a)*abs($p - $b)*abs($p - $c));
     }
   }
 
+  tinh();
 ?>
 
 <body class="w-100vw h-100vh flex flex-x-y">
-  <section class="form-s w-450">
+  <section class="form-s w-410">
     <div class="title w-full bg-yellow h-40 flex flex-x-y">
       <h4 class="text-red fw-700">CHU VI VÀ DIỆN TÍCH HÌNH TAM GIÁC</h4>
     </div>
 
-    <form action="c_s_tam_giac.php" method="post"
+    <form action="" method="post"
       class="p-5"
     >
       <div class="item flex justify-content-between w-full my-4">
         <p>Cạnh a:</p>
-        <input class="outline-none px-3 input" name="a" type="text" placeholder="0" value="<?php echo $a ?>">
+        <input class="outline-none px-3 input" name="a" type="text" value="<?php echo $a ?>">
       </div>
 
       <div class="item flex justify-content-between w-full my-4">
         <p>Cạnh b:</p>
-        <input class="outline-none px-3 input" name="b" type="text" placeholder="0" value="<?php echo $b ?>">
+        <input class="outline-none px-3 input" name="b" type="text" value="<?php echo $b ?>">
       </div>
 
       <div class="item flex justify-content-between w-full my-4">
         <p>Cạnh c:</p>
-        <input class="outline-none px-3 input" name="c" type="text" placeholder="0" value="<?php echo $c ?>">
+        <input class="outline-none px-3 input" name="c" type="text" value="<?php echo $c ?>">
       </div>
 
       <div class="item flex justify-content-between w-full my-4">
         <p>Chu vi:</p>
-        <input class="outline-none px-3 input" name="kq" type="text"
-          placeholder="0" disabled
+        <input
+          class="outline-none px-3 input"
+          name="kq" type="text" disabled
           value="<?php echo $cv ?>"
         >
       </div>
 
       <div class="item flex justify-content-between w-full my-4">
         <p>Diện tích:</p>
-        <input class="outline-none px-3 input" name="kq" type="text"
-          placeholder="0" disabled
+        <input
+          class="outline-none px-3 input"
+          name="kq" type="text" disabled
           value="<?php echo $dt ?>"
         >
       </div>
 
       <div class="frame-btn text-center my-5">
-        <input class="" type="submit" name="tinh" value="Tính">
+        <input
+          class="px-3"
+          type="submit" name="tinh"
+          value="Tính"
+        >
       </div>
     </form>  
   </section>
