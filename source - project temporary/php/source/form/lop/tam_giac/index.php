@@ -43,9 +43,7 @@
       }
 
       if (checkTamGiac() == false) {
-        echo "<script>";
-        echo "alert('Các cạnh này không thể tạo thành tam giác !');";
-        echo "</script>";
+        echo "<script>alert('Các cạnh này không thể tạo thành tam giác !');</script>";
         return;
       }
 
