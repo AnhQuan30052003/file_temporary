@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://anhquan30052003.github.io/AnhQuanCSS/style-main.css">
-  <title>Document</title>
-
-  <style>
-    .form-s {
-      border: solid 1px;
-    }
-
-    .input {
-      width: 300px;
-    }
-
-    .title {
-      font-style: italic;
-    }
-
-    .info span {
-      display: inline-block;
-      width: 50px;
-    }
-  </style>
-</head>
+<!-- Thiết kế form: Tính tiền điện -->
 
 <?php
   $tenChuHo = "";
@@ -76,6 +50,34 @@
 
   tinh();
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://anhquan30052003.github.io/AnhQuanCSS/style-main.css">
+  <title>Document</title>
+
+  <style>
+    .form-s {
+      border: solid 1px;
+    }
+
+    .input {
+      width: 300px;
+    }
+
+    .title {
+      font-style: italic;
+    }
+
+    .info span {
+      display: inline-block;
+      width: 50px;
+    }
+  </style>
+</head>
 
 <body class="w-100vw h-100vh flex flex-x-y">
   <section class="form-s w-550">

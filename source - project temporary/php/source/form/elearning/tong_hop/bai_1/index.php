@@ -1,18 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://anhquan30052003.github.io/AnhQuanCSS/style-main.css">
-  <title>Document</title>
-
-  <style>
-    .form-s {
-      border: solid 5px purple;
-
-    }
-  </style>
-</head>
+<!-- Thiết kế form: Tính diện tích hình chữ nhật -->
 
 <?php
   $d = "";
@@ -37,6 +23,22 @@
 
   tinh();
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://anhquan30052003.github.io/AnhQuanCSS/style-main.css">
+  <title>Document</title>
+
+  <style>
+    .form-s {
+      border: solid 5px purple;
+
+    }
+  </style>
+</head>
 
 <body class="w-100vw h-100vh flex flex-x-y">
   <section class="form-s w-380">

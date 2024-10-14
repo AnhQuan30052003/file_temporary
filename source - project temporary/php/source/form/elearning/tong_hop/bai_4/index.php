@@ -1,3 +1,5 @@
+<!-- Website nhận và xử lý thông tin người dùng -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

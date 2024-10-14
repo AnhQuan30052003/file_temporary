@@ -48,8 +48,8 @@
 </head>
   
 <body class="w-100vw h-100vh flex flex-x">
-  <section class="mod w-600">
-    <div class="title text-white blue-new fw-700 text-center fs-35" style="font-style: italic;">TÌM NĂM NHUẬN</div>
+  <section class="mod w-600 mt-20">
+    <div class="title text-white blue-new fw-700 text-center fs-35 py-10" style="font-style: italic;">TÌM NĂM NHUẬN</div>
     <form class="content lam-new" action="" method="post">
       <div class="input flex flex-y justify-content-around h-100">
         <div class="frame w-150">

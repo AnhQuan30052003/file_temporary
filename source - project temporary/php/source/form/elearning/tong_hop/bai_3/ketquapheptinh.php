@@ -1,3 +1,5 @@
+<!-- Website thực hiện phép tính 2 số -->
+
 <?php
   $pt = $_REQUEST["pt"];
   $so1 = $_REQUEST["st1"];
