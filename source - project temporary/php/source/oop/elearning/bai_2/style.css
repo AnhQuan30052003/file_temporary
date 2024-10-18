@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+section {
+  margin: 10px auto;
+  width: 900px;
+  border: solid 1px;
+  padding: 10px;
+}
+
+input {
+  outline: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.frame-input,
+.frame-output,
+.frame-thuc-linh {
+  background-color: #ffffcc;
+  padding: 10px;
+}
+
+.frame-input,
+.frame-output {
+  display: flex;
+  margin: 10px 0;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.item {
+  margin: 5px 0;
+  display: flex;
+}
+
+.item > span {
+  width: 150px;
+  display: inline-block;
+}
+
+.choose-gioi-tinh span {
+  margin-right: 10px;
+}
+.choose-gioi-tinh span input {
+  margin-right: 5px;
+}
+
+.frame-button {
+  text-align: center;
+  padding: 5px 0;
+}
+
+button {
+  padding: 3px 5px;
+}
+
+.frame-thuc-linh .item {
+  display: flex;
+  justify-content: center;
+}
