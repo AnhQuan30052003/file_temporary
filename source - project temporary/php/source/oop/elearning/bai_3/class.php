@@ -2,12 +2,12 @@
   class PhanSo {
     private $tu, $mau;
 
-    public function __construct($tu, $mau) {
+    public function __construct(int $tu, int $mau) {
       $this->tu = $tu;
       $this->mau = $mau;
     }
 
-    public function phep_cong($ps) {
+    public function phep_cong(PhanSo $ps) {
       $tuSo1Temp = $this->tu * $ps->get_mau();
       $tuSo2Temp = $ps->get_tu() * $this->mau;
 
@@ -17,7 +17,7 @@
       return new PhanSo($tu, $mau);
     }
 
-    public function phep_tru($ps) {
+    public function phep_tru(PhanSo $ps) {
       $tuSo1Temp = $this->tu * $ps->get_mau();
       $tuSo2Temp = $ps->get_tu() * $this->mau;
       
@@ -27,21 +27,21 @@
       return new PhanSo($tu, $mau);
     }
 
-    public function phep_nhan($ps) {
+    public function phep_nhan(PhanSo $ps) {
       $tu = $this->tu * $ps->get_tu();
       $mau = $this->mau * $ps->get_mau();
 
       return new PhanSo($tu, $mau);
     }
 
-    public function phep_chia($ps) {
+    public function phep_chia(PhanSo $ps) {
       $tu = $this->tu * $ps->get_mau();
       $mau = $this->mau * $ps->get_tu();
 
       return new PhanSo($tu, $mau);
     }
 
-    public function UCLN($a, $b) {
+    public function UCLN(int $a, int $b) {
       if ($b == 0) return $a;
       return $this->UCLN($b, $a % $b);
     }
@@ -56,7 +56,7 @@
       return [$this->tu, $this->mau];
     }
 
-    public function set_tu($tu) {
+    public function set_tu(int $tu) {
       $this->tu = $tu;
     }
 
@@ -64,7 +64,7 @@
       return $this->tu;
     }
 
-    public function set_mau($tu) {
+    public function set_mau(int $tu) {
       $this->mau = $tu;
     }
 
