@@ -2,14 +2,11 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <!-- <link rel="stylesheet" href="https://anhquan30052003.github.io/AnhQuanCSS/style-main.css"> -->
   <title>Thông tin sữa</title>
 </head>
 
 <body>
   <?php
-  // Ket noi CSDL
-  //require("connect.php");
   $conn = mysqli_connect('localhost', 'root', '', 'qlbansua')
     or die('Could not connect to MySQL: ' . mysqli_connect_error());
 
@@ -26,7 +23,8 @@
     <th width="80">Trọng lượng</th>
   </tr>';
 
-  if (mysqli_num_rows($result) <> 0) {
+
+  if (mysqli_num_rows($result) != 0) {
     $stt = 1;
     while ($rows = mysqli_fetch_row($result)) {
       echo "<tr>";
